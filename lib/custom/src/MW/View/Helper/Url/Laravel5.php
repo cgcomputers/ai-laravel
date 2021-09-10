@@ -37,6 +37,7 @@ class Laravel5
 		parent::__construct( $view );
 
 		$this->builder = $builder;
+		$this->builder->defaults( $fixed );
 		$this->fixed = $fixed;
 	}
 
